@@ -1,0 +1,58 @@
+#bento-box{
+    display: grid;
+   height: 70vh;
+   width: 70vw;
+    
+    grid-template-columns: 2fr repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 5px;
+}
+
+.box{
+    
+    background-color: lightgray;
+    
+}
+
+#A{
+    grid-column-start:1 ;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#G{
+    grid-column-start:1 ;
+    grid-column-end: 3; 
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+#C{
+    grid-column-start:3 ;
+    grid-column-end: 4; 
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+#D{
+    grid-column-start:4 ;
+    grid-column-end: 5; 
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+#F{
+    grid-column-start:3 ;
+    grid-column-end: 4; 
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+#H{
+    grid-column-start:4 ;
+    grid-column-end: 6; 
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+#I{
+    grid-column-start:5 ;
+    grid-column-end: 6; 
+    grid-row-start: 2;
+    grid-row-end: 3;
+}

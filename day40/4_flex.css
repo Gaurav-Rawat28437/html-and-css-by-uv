@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#parent{
+    background-color: yellow;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /*content move to center */
+    gap: 10px;
+    flex-wrap: wrap; /*if cotent is bigger it moves to next-line*/
+}
+
+.child{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+}

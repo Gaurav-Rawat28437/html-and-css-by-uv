@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#big-container{
+    width: fit-content;
+   height: 500px;
+    border: 1px solid black;
+    display: flex;
+}
+
+.small-container{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+}
+
+#absolute-position{
+    position:absolute; 
+    /* it remove the element from that layer and place it on other upper layer */
+ 
+    left:0px;
+    
+   
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>form tags</title>
+    
+</head>
+<body>
+    <H1>Form tag</H1>
+
+    <form method="get" action="https://httpdump.app/dumps/05d52cd1-c6ee-40ce-be99-1ed6fc5e23f4">
+         <!--action: help to send form data to backed
+         get method: used to send data to backend
+         post method: used to receive data from backend
+         ***http dump:-you can create fake backend by search "http dump" in google -->
+
+            <label for="us">Username</label>
+            <input required id="us" type="text" name="Username" minlength="2"> <!--required: you have to do that and it is compalsory  -->
+             <!--name attributes used to identify the element and it to associate its value with a key when the form data is submitted to a server-->
+        <br>
+             <label for="ps">password</label>
+            <input required id="ps" type="password" name="password">
+        <br>
+            <button type="submit">submit</button> 
+            <!--button is tag which is used to submit the data and it reload the page
+            by default button type is submit.
+            reset type do not reload the page but clear all the data we fill in the form-->
+            <button type="reset">clear</button> 
+    </form>
+</body>
+</html>

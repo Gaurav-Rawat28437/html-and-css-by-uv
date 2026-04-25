@@ -1,0 +1,24 @@
+#a-hover:hover{
+    background-color: blue;
+    color: black;
+}
+
+#a-focus:focus {
+  background-color: yellow;
+}
+
+
+
+
+p{
+  display: none;
+}
+
+div{
+  display: inline;
+}
+
+div:hover + p{
+  display: block;
+  background-color: yellow;
+}

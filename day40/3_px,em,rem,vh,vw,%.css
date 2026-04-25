@@ -1,0 +1,67 @@
+/* Root font */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial;
+}
+
+/* Container uses % */
+.container {
+  width: 80%;
+  height: 300px; /* needed for % height */
+  border: 2px solid black;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Title uses rem */
+.title {
+  font-size: 2rem; /* 2 × 16px = 32px */
+}
+
+/* Common box */
+.box {
+  margin: 10px 0;
+  padding: 10px;
+  color: white;
+}
+
+/* PX (fixed) */
+.px {
+  width: 200px;
+  background: red;
+}
+
+/* % (relative to container) */
+.percent {
+  width: 50%;
+  height: 30%;
+  background: blue;
+}
+
+/* EM (relative to its font-size) */
+.em {
+  font-size: 20px;
+  width: 10em; /* 200px */
+  background: green;
+}
+
+/* REM (relative to root) */
+.rem {
+  width: 10rem; /* 160px */
+  background: purple;
+}
+
+/* VW (screen width) */
+.vw {
+  width: 50vw;
+  background: orange;
+}
+
+/* VH (screen height) */
+.vh {
+  height: 20vh;
+  background: brown;
+}

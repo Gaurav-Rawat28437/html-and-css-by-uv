@@ -1,0 +1,21 @@
+#outer{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    /* overflow: visible;    by deflaut it is visible  */
+    /* overflow:  hidden; it will hide the contant which is outside */
+    overflow: scroll ; /* it will give scrolling bar on it */
+}
+
+
+/* declare the variable */
+:root{
+    --my_color:aqua;
+}
+
+
+/* use the variable by var(variable_name,addtion value); */
+#div{
+    /* background-color: aqua; */
+    background-color: var(--my_color,black);
+}

@@ -1,0 +1,55 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#big{
+    
+    height: 80vh;
+    display: grid;
+    border: 3px solid green;
+     grid-template-columns: repeat(3,100px);
+     grid-template-rows: repeat(3,100px);
+
+/* we can set columns and rows in fraction */    
+     /* grid-template-columns: 1fr 1fr 1fr 1fr; element take 1fraction of its parent */
+     /*1fr means 1 fraction on grid block*/
+     /* we can write it like this */
+     /* grid-template-columns: repeat(5,1fr);   */
+     /* grid-template-columns: auto auto auto auto; eqally take column */
+     /* grid-template-rows: repeat(3, auto) */
+
+
+/* we can give name to its line */
+     /* grid-template-columns: [phela] 100px [dusra] 20px; */
+
+justify-content: center;
+align-content: center;
+/* gap: 20px; equally take gap from rows and column */
+row-gap: 5px;
+column-gap: 40px;
+/* place-content: center; it will help to place content in center */
+
+    
+
+    }
+
+.class{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    border: 1px solid blue;
+}
+
+#B{
+    /* in grid, line index start with with 1 */
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    /* also write it like this */
+    /* grid-column: 1/2;
+    grid-row: 1/2; */
+    /* 1 is starting and 2 is ending */
+}

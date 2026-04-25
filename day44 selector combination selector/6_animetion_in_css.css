@@ -1,0 +1,24 @@
+.moving-box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+
+  /* Apply the animation */
+  animation-name: moving-box;
+  animation-duration: 5s; /* How long one cycle lasts */
+  animation-iteration-count: infinite; /* Makes it repeat forever */
+  animation-direction: alternate; /* Plays it forwards, then backwards */
+}
+
+@keyframes moving-box {
+  0% {
+    /* Starting point: moves the element 0% of the viewport width from the left */
+    left: 0vw;
+  }
+
+  100% {
+    /* Ending point: moves the element across the screen */
+    left: calc(100vw - 100px);
+  }
+}

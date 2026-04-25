@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>internal style in css </title>
+
+    <!-- this is internal style in css -->
+    <style>
+        *{
+             /* is universal,here whatever write apply in whole page*/
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #A{
+            background-color: aqua;
+        }
+
+        .same{
+            margin: 10px;
+            padding: 20px;
+            border: 2px solid yellowgreen;
+        }
+
+    </style>
+</head>
+<body>
+    <!--type of css
+    inline css it has higher  priority
+    internal css
+    extarnal css
+    in internal and extarnal id priority***id > class > tags > univarsal***
+    -->
+
+    <div class="same" id="A">A</div>
+    <div class="same" id="B">B</div>
+    <div class="same" id="C">C</div>
+    <div class="same" id="D">D</div>
+    <div class="same" id="E">E</div>
+    <!-- in css and html, id is not unique.we can use same id in different tags-->
+
+</body>
+</html>
